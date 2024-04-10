@@ -69,6 +69,9 @@ const toScreen = () => (screenContent.innerText = displayValue);
 const toMemory = function () {
     if (displayValue !== "") {
         firstNum = displayValue;
+    } else if (firstNum != undefined) {
+        secondNum = displayValue;
+        operate();
     }
 };
 
